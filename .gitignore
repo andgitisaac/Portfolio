@@ -1,3 +1,10 @@
+# misc
+.gitignore
+.DS_Store
+.vscode/
+jackson/
+others/
+
 # Logs
 logs
 *.log

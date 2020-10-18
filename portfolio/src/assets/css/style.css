@@ -1,0 +1,228 @@
+/* -------------------- Common -------------------- */
+body { 
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* -------------------- Aside -------------------- */
+
+#aside-container {
+  width: 300px;
+  float: left;
+  position: fixed;
+  overflow-y: scroll;
+  background: #f2f3f7;
+}
+
+  #aside-container #author-container {
+    margin: auto;
+  }
+
+    #aside-container #author-container #author-image {
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 0%;
+      border-radius: 50%;
+    }
+
+    #aside-container #author-container #author-name {
+      margin: 10px auto;
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    #aside-container #author-container #author-description {
+      margin: 10px auto;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+  #aside-container #navbar-container {
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+  }
+
+    #aside-container #navbar-container #navbar-content {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+      #aside-container #navbar-container #navbar-content .navbar-section {
+        width: 150px;
+        height: 30px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      #aside-container #navbar-container #navbar-content a {
+        color: rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+        font-family: "Quicksand", Arial, sans-serif;
+      }
+
+      #aside-container #navbar-container #navbar-content a:after {
+        background-color: red;
+      }
+
+      #aside-container #navbar-container #navbar-content a:hover {
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: #2c98f0;
+      }
+
+  #aside-container #contact-container {
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+  }
+
+    #aside-container #contact-container #contact-content {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+      #aside-container #contact-container #contact-content .contact-section {
+        width: 150px;
+        height: 30px;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 20pt;
+      }
+
+/* -------------------- Main Content -------------------- */
+
+#main-container {
+  width: calc(100% - 300px);
+  float: right;
+}
+
+.heading {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+}
+
+.subheading {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px; 
+}
+
+/* -------------------- Home Content -------------------- */
+
+#home-section #home-container{
+}
+
+  #home-section #home-container .image-container {
+  }
+
+    #home-section #home-container .image-container #home-image {
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #home-section #home-container .image-container #home-image-description {
+      position: absolute;
+      top: 40vh;
+      left: 350px;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    #home-section #home-container .image-container #home-image-description h1 {
+      font-size: 45pt;
+      font-weight: 600;
+      color: white;
+    }
+
+    #home-section #home-container .image-container #home-image-description h2 {
+      margin-top: 3vh;
+      font-weight: 500;
+      color: white;
+    }
+
+    #home-section #home-container .image-container #home-image-description #resume-button {
+      height: 45px;
+      margin-top: 10px;
+      background-color: rgba(0, 0, 0, 0);
+      border: 2px solid black;
+      border-radius: 2px;
+    }
+
+    #home-section #home-container .image-container #home-image-description .download-description {
+      color: black;
+      font-size: 15pt;
+    }
+
+    #home-section #home-container .image-container #home-image-description .download-icon {
+      margin-left: 5pt;
+      color: rgb(29, 29, 29);
+    }
+
+/* -------------------- About Content -------------------- */
+
+#about-section #about-container{
+  
+}
+
+/* -------------------- Education Content -------------------- */
+
+#education-section #education-container{
+  
+}
+
+/* -------------------- Skills Content -------------------- */
+
+#skills-section #skills-container{
+  
+}
+
+/* -------------------- Work Experience Content -------------------- */
+
+#workexperience-section #workexperience-container{
+  
+}
+
+/* -------------------- Projects Content -------------------- */
+
+#projects-section #projects-container{
+  
+}
