@@ -15,11 +15,10 @@ export default class Navbar extends Component {
 
           <nav id="navbar-container">
             <div id="navbar-content">
-              <a href="#" className="navbar-section active">Home</a>              
-              <a href="#" className="navbar-section">About</a>
-              <a href="#" className="navbar-section">Education</a>
+              <a href="#" className="navbar-section active">Home</a> 
               <a href="#" className="navbar-section">Skills</a>
               <a href="#" className="navbar-section">Work Experience</a>
+              <a href="#" className="navbar-section">Education</a>
               <a href="#" className="navbar-section">Projects</a>
             </div>
           </nav>

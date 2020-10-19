@@ -5,13 +5,13 @@ import './App.css';
 import './assets/css/style.css'
 
 import Navbar from './components/Navbar'
-import MainContent from './components/MainContent'
+import Main from './components/Main'
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <MainContent></MainContent>
+      <Main></Main>
     </div>
   );
 }

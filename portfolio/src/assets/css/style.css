@@ -124,105 +124,260 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
 }
 
+.section-container {
+  margin-bottom: 40px;
+  border-style: inset;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.heading-container {
+  width: 100%;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
 .heading {
-  font-size: 18px;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
+  font-size: 26px;
   font-weight: 700;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 5px;
-  line-height: 1.8;
+  line-height: 1.6;
   position: relative;
 }
 
 .subheading {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: block;
-  font-size: 10px;
+  font-size: 18px;
+  text-align: left;
   text-transform: uppercase;
   color: #999999;
   font-weight: 500;
-  letter-spacing: 5px; 
+  letter-spacing: 4px; 
 }
 
 /* -------------------- Home Content -------------------- */
 
-#home-section #home-container{
+#home-container .image-container #home-image {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-  #home-section #home-container .image-container {
-  }
+#home-container .image-container #home-image-description {
+  width: 30vw;
+  position: absolute;
+  top: 30vh;
+  left: 350px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0);
+}
 
-    #home-section #home-container .image-container #home-image {
-      height: 100vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+#home-container .image-container #home-image-description h1 {
+  font-size: 45pt;
+  font-weight: 600;
+  color: white;
+}
 
-    #home-section #home-container .image-container #home-image-description {
-      position: absolute;
-      top: 40vh;
-      left: 350px;
-      text-align: left;
-      background-color: rgba(0, 0, 0, 0);
-    }
+#home-container .image-container #home-image-description h5 {
+  margin-top: 3vh;
+  color: rgb(243, 243, 243);
+}
 
-    #home-section #home-container .image-container #home-image-description h1 {
-      font-size: 45pt;
-      font-weight: 600;
-      color: white;
-    }
+#home-container .image-container #home-image-description #resume-button {
+  height: 45px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid black;
+  border-radius: 2px;
+}
 
-    #home-section #home-container .image-container #home-image-description h2 {
-      margin-top: 3vh;
-      font-weight: 500;
-      color: white;
-    }
+#home-container .image-container #home-image-description .download-description {
+  color: black;
+  font-size: 15pt;
+}
 
-    #home-section #home-container .image-container #home-image-description #resume-button {
-      height: 45px;
-      margin-top: 10px;
-      background-color: rgba(0, 0, 0, 0);
-      border: 2px solid black;
-      border-radius: 2px;
-    }
-
-    #home-section #home-container .image-container #home-image-description .download-description {
-      color: black;
-      font-size: 15pt;
-    }
-
-    #home-section #home-container .image-container #home-image-description .download-icon {
-      margin-left: 5pt;
-      color: rgb(29, 29, 29);
-    }
-
-/* -------------------- About Content -------------------- */
-
-#about-section #about-container{
-  
+#home-container .image-container #home-image-description .download-icon {
+  margin-left: 5pt;
+  color: rgb(29, 29, 29);
 }
 
 /* -------------------- Education Content -------------------- */
 
-#education-section #education-container{
-  
+#education-container #education-content {
+  width: 100%;
+  padding: 0 20px;
 }
+
+  #education-container #education-content .school {
+    margin-bottom: 5px;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.6;
+  }
+
+  #education-container #education-content .degree {
+    margin-bottom: 5px;
+    color: #868686;
+    font-size: 18px;
+    font-weight: 550;
+    text-transform: uppercase;
+  }
+
+  #education-container #education-content .department {
+    color: black;
+    font-size: 16px;    
+  }
+
+  #education-container #education-content .school-description {
+    margin-top: 5px;
+  }
+
+    #education-container #education-content .school-description ul li {
+      list-style-type: circle;
+    }
+
+  #education-container #education-content .period {
+    color: rgb(97, 97, 97);
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+  }
+
+  #education-container #education-content .location {
+    color: gray;
+    font-style: italic;
+    font-weight: 300;
+    display: block;    
+  }
 
 /* -------------------- Skills Content -------------------- */
 
-#skills-section #skills-container{
+/* #skills-container{
   
+} */
+
+/* -------------------- Work Content -------------------- */
+
+#work-container #work-content {
+  width: 100%;
+  padding: 0 20px;
 }
 
-/* -------------------- Work Experience Content -------------------- */
+  #work-container #work-content .timeline {
+    position: relative;
+    width: 100%;
+    left: 0; 
+  }
 
-#workexperience-section #workexperience-container{
-  
-}
+  #work-container #work-content .timeline::after {
+    width: 4px;
+    margin-left: 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: '';
+    background-color: rgb(161, 161, 161);
+  }
+
+    #work-container #work-content .timeline .work-entry {
+      padding: 10px 20px;
+      position: relative;
+      background-color: inherit;
+      width: 100%;
+    }
+
+    #work-container #work-content .timeline .work-entry::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: -25px;
+      background-color: white;
+      border: 4px solid #FF9F55;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    #work-container #work-content .timeline .left {
+      left: 20px;
+    }
+
+    #work-container #work-content .timeline .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 17px;
+      width: 0;
+      z-index: 1;
+      left: 10px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #f2f3f7 transparent transparent;
+    }
+
+      #work-container #work-content .timeline .work-entry .work-entry-content {
+        padding: 20px 30px 0 30px;
+        background-color: #f2f3f7;
+        position: relative;
+        border-radius: 6px;
+      }
+
+      #work-container #work-content .company {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.8;
+      }
+    
+      #work-container #work-content .job {
+        color: #868686;
+        font-style: oblique;
+        font-size: 18px;
+        font-weight: 550;
+      }
+        
+      #work-container #work-content .work-description {
+        margin-top: 5px;
+        margin-left: -20px;
+        float: left;
+      }
+    
+        #work-container #work-content .work-description ul li {
+          list-style-type: circle;
+          font-weight: 400;
+        }
+
+        #work-container #work-content .work-description ul li ul li{
+          list-style-type: square;
+          font-weight: 300;
+        }
+    
+      #work-container #work-content .period {
+        color: rgb(97, 97, 97);
+        font-style: italic;
+        font-weight: 400;
+        display: block;
+      }
+    
+      #work-container #work-content .location {
+        color: gray;
+        font-style: italic;
+        font-weight: 300;
+        display: block;
+      }
+
 
 /* -------------------- Projects Content -------------------- */
 
-#projects-section #projects-container{
+/* #projects-container{
   
-}
+} */
