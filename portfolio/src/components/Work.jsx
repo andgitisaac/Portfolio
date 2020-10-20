@@ -8,7 +8,7 @@ export default class Work extends Component {
       <section id="work-section" className="section-container">
         <div id="work-container">     
           <div className="heading-container">
-            <h2 className="subheading">Work Experience</h2>
+            <h2 className="subheading">Experience</h2>
             <h2 className="heading">Work Experience</h2>
           </div>
 
@@ -40,15 +40,15 @@ export default class Work extends Component {
               />
 
               <WorkContent 
-              company="BravoAI Co., Ltd."
-              job="Backend Software Engineer Intern"
-              descriptions={[
-                {name: "Utilized MongoDB database to build RESTful web services to manage policies. Cooperated with one of the biggest insurance companies in Taiwan."},
-                {name: "Slashed 15% cost and time by dealing with over 1,000 insurance subscriptions and claims electronically every day."},
-                {name: "Proposed collecting customers’ e-signatures for few-shot verification of identification to prevent identity theft."}
-              ]}
-              period="Oct. 2018--Jan. 2019"
-              location="Taipei, Taiwan"
+                company="BravoAI Co., Ltd."
+                job="Backend Software Engineer Intern"
+                descriptions={[
+                  {name: "Utilized MongoDB database to build RESTful web services to manage policies. Cooperated with one of the biggest insurance companies in Taiwan."},
+                  {name: "Slashed 15% cost and time by dealing with over 1,000 insurance subscriptions and claims electronically every day."},
+                  {name: "Proposed collecting customers’ e-signatures for few-shot verification of identification to prevent identity theft."}
+                ]}
+                period="Oct. 2018--Jan. 2019"
+                location="Taipei, Taiwan"
               />
 
               <WorkContent 

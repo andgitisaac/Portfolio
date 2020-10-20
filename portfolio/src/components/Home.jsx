@@ -13,8 +13,10 @@ export default class Home extends Component {
             <div id="home-image-description">
               <h1>Hi!<br></br>I'm Hwai-Jin</h1>
               <h5>
-                I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews.
-                Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                I am a Developer. <br/>
+                sdfgjksdf. <br/>
+                I am a Minecraft Modder. <br/>
+                sdfgjksdf.
               </h5>
 
               <div id="resume-button" className="btn btn-primary btn-learn">

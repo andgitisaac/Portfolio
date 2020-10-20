@@ -25,8 +25,8 @@ export default class Navbar extends Component {
                     
           <div id="contact-container">
             <div id="contact-content">
-              <a href="https://www.linkedin.com/in/hjpeng/" className="contact-section fab fa-linkedin"></a>
-              <a href="https://github.com/andgitisaac" className="contact-section fab fa-github-square"></a>
+              <a href="https://www.linkedin.com/in/hjpeng/" target="_blank" className="contact-section fab fa-linkedin"></a>
+              <a href="https://github.com/andgitisaac" target="_blank" className="contact-section fab fa-github-square"></a>
             </div>
           </div>
         </aside>

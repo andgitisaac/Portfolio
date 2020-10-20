@@ -126,7 +126,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-container {
   margin-bottom: 40px;
-  border-style: inset;
+  padding-bottom: 40px;
+  /* border-style: inset; */
 }
 
 .image-container {
@@ -173,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 #home-container .image-container #home-image-description {
   width: 30vw;
   position: absolute;
-  top: 30vh;
+  bottom: 10px;
   left: 350px;
   text-align: left;
   background-color: rgba(0, 0, 0, 0);
@@ -194,18 +195,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 45px;
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 2px;
 }
 
 #home-container .image-container #home-image-description .download-description {
-  color: black;
+  color: white;
   font-size: 15pt;
 }
 
 #home-container .image-container #home-image-description .download-icon {
   margin-left: 5pt;
-  color: rgb(29, 29, 29);
+  color: white;
 }
 
 /* -------------------- Education Content -------------------- */
@@ -260,9 +261,52 @@ h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- Skills Content -------------------- */
 
-/* #skills-container{
-  
-} */
+#skills-container #skills-content {  
+  width: 100%;
+}
+
+  #skills-container #skills-content .skill-entry { 
+    margin: 10px 50px;
+  }
+
+    #skills-container #skills-content .skill-entry .skill-heading { 
+      width: 100%;
+      padding: 5px 0;
+      background-color: #9c9c9c;
+    }
+
+      #skills-container #skills-content .skill-entry .skill-heading .skill-title {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 0;
+        text-align: left;
+      }
+
+        #skills-container #skills-content .skill-entry .skill-heading #skill-heading-text { 
+          color: white;
+          font-weight: 600;
+          font-size: 12pt;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+    #skills-container #skills-content .skill-entry .skill-body { 
+      width: 100%;
+      margin-top: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+      #skills-container #skills-content .skill-entry .skill-body #skill-body-text { 
+        margin: 5px;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 12pt;
+      }
 
 /* -------------------- Work Content -------------------- */
 
@@ -378,6 +422,134 @@ h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- Projects Content -------------------- */
 
-/* #projects-container{
-  
-} */
+#projects-container #projects-content {  
+  width: 100%;
+}
+
+/* https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+  #projects-container #projects-content .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+    #projects-container #projects-content .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    #projects-container #projects-content .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    /* Position the close button (top right corner) */
+    #projects-container #projects-content .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    /* Position the content inside the overlay */
+    #projects-container #projects-content .overlay .overlay-content {
+      position: relative;
+      top: 10%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      text-align: left; /* Centered text/links */
+      margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+
+      #projects-container #projects-content .overlay .overlay-content .overlay-title {
+        margin-left: 50px;
+        font-size: 36px;
+        color: white;
+        display: block; /* Display block instead of inline */
+      }
+
+      #projects-container #projects-content .overlay .overlay-content .overlay-description {
+        padding: 10px 20px;
+      }  
+
+        #projects-container #projects-content .overlay .overlay-content .overlay-description ul li {
+          padding: 3px 0;
+          font-size: 16pt;
+          color: #818181;
+          display: list-item; /* Display block instead of inline */
+        }        
+
+        #projects-container #projects-content .overlay .overlay-content .overlay-description ul li:hover {
+          color: rgb(199, 199, 199);
+          transition: 0.3s; /* Transition effects on hover (color) */
+        }
+
+      #projects-container #projects-content .overlay .overlay-content .overlay-link-container {
+        width: 100%;
+      }
+
+      #projects-container #projects-content .overlay .overlay-content .overlay-link-container #link-button {
+          height: auto;
+          width: 180px;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          background-color: white;
+          border: 2px solid white;
+          border-radius: 5px;
+        }
+
+        #projects-container #projects-content .overlay .overlay-content .overlay-link-container a {
+          font-size: 15pt;
+          color: black;
+          text-align: center;
+        }
+
+      #projects-container #projects-content .overlay .overlay-content .overlay-media-container {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+      }
+      
+        #projects-container #projects-content .overlay .overlay-content .overlay-media-container .media-image {
+          width: 80vw;
+        }
+    
+  #projects-container #projects-content .display .project-heading {
+    margin: 20px 60px;
+    padding: 10px 0;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+
+    #projects-container #projects-content .display .project-heading .project-title {
+      padding-left: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+      #projects-container #projects-content .display .project-heading .project-title .open-icon {
+        font-size: 22pt;
+        cursor: all-scroll;
+      } 
+
+      #projects-container #projects-content .display .project-heading .project-title .project-heading-text {
+        margin-left: 16px;
+        color: black;
+        font-weight: 600;
+        font-size: 16pt;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+      } 
