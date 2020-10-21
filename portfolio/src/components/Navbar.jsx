@@ -20,6 +20,8 @@ export default class Navbar extends Component {
               <a href="#" className="navbar-section">Work Experience</a>
               <a href="#" className="navbar-section">Education</a>
               <a href="#" className="navbar-section">Projects</a>
+              <a href="#" className="navbar-section">Publications</a>
+              <a href="#" className="navbar-section">Minecraft</a>
             </div>
           </nav>
                     

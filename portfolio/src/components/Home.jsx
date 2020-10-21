@@ -11,13 +11,12 @@ export default class Home extends Component {
           <div className="image-container">
             <div id="home-image" style={ {backgroundImage: `url(${home_img})`} }></div>
             <div id="home-image-description">
-              <h1>Hi!<br></br>I'm Hwai-Jin</h1>
-              <h5>
-                I am a Developer. <br/>
-                sdfgjksdf. <br/>
-                I am a Minecraft Modder. <br/>
-                sdfgjksdf.
-              </h5>
+              <h1>
+                Hi!<br></br>I'm Hwai-Jin
+              </h1>
+              <h3>
+                Be a problem solver. <br/> Not a coder.
+              </h3>
 
               <div id="resume-button" className="btn btn-primary btn-learn">
                 <a href={resume} target='_blank' className="download-description">Download CV</a>

@@ -5,6 +5,8 @@ import Education from './Education'
 import Skills from './Skills'
 import Work from './Work'
 import Projects from './Projects'
+import Publications from './Publications'
+import Minecraft from './Minecraft'
 
 export default class Main extends Component {
   render() {
@@ -16,6 +18,8 @@ export default class Main extends Component {
           <Work></Work>
           <Education></Education>
           <Projects></Projects>
+          <Publications></Publications>
+          <Minecraft></Minecraft>
         </div>
       </div>
     )

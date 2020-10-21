@@ -15,6 +15,9 @@ export default class ProjectContent extends Component {
       },
       "anime_gan": {
         uri: require("../assets/images/projects/anime_gan.jpg")
+      },
+      "stroke_stylization": {
+        uri: require("../assets/images/projects/stroke_stylization.png")
       }
     }
   }
