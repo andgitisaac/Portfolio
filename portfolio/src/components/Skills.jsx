@@ -21,7 +21,7 @@ export default class Skills extends Component {
 
             <SkillContent 
               index="1"
-              category="Web Developement"
+              category="Web Development"
               items="Flask, Django, React, HTML5, CSS"
             />
 
