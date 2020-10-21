@@ -1,33 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0696a31c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.5359ba68.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.5359ba68.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.c34e2b0e.chunk.css",
+    "main.js": "/Portfolio/static/js/main.ec91ce08.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ec91ce08.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
     "static/css/2.2a86faee.chunk.css": "/Portfolio/static/css/2.2a86faee.chunk.css",
-    "static/js/2.48572dda.chunk.js": "/Portfolio/static/js/2.48572dda.chunk.js",
-    "static/js/2.48572dda.chunk.js.map": "/Portfolio/static/js/2.48572dda.chunk.js.map",
+    "static/js/2.2f6697c4.chunk.js": "/Portfolio/static/js/2.2f6697c4.chunk.js",
+    "static/js/2.2f6697c4.chunk.js.map": "/Portfolio/static/js/2.2f6697c4.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.d6b22c9920717a2fe9d55dee08459c94.js": "/Portfolio/precache-manifest.d6b22c9920717a2fe9d55dee08459c94.js",
+    "precache-manifest.b2fd3035c7d69c6884c45b1229da66c9.js": "/Portfolio/precache-manifest.b2fd3035c7d69c6884c45b1229da66c9.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/Portfolio/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.0696a31c.chunk.css.map": "/Portfolio/static/css/main.0696a31c.chunk.css.map",
-    "static/js/2.48572dda.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.48572dda.chunk.js.LICENSE.txt",
+    "static/css/main.c34e2b0e.chunk.css.map": "/Portfolio/static/css/main.c34e2b0e.chunk.css.map",
+    "static/js/2.2f6697c4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.2f6697c4.chunk.js.LICENSE.txt",
     "static/media/E2STN.jpg": "/Portfolio/static/media/E2STN.42edaef0.jpg",
     "static/media/address_spell_checker.jpg": "/Portfolio/static/media/address_spell_checker.bd68bfca.jpg",
     "static/media/anime_gan.jpg": "/Portfolio/static/media/anime_gan.4809a270.jpg",
     "static/media/author_img.jpg": "/Portfolio/static/media/author_img.b8383ec5.jpg",
     "static/media/home_img.jpg": "/Portfolio/static/media/home_img.d1624bbc.jpg",
-    "static/media/logo.svg": "/Portfolio/static/media/logo.5d5d9eef.svg",
     "static/media/resume.pdf": "/Portfolio/static/media/resume.d5e79643.pdf",
     "static/media/stroke_stylization.png": "/Portfolio/static/media/stroke_stylization.e8a56885.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.48572dda.chunk.js",
-    "static/css/main.0696a31c.chunk.css",
-    "static/js/main.5359ba68.chunk.js"
+    "static/js/2.2f6697c4.chunk.js",
+    "static/css/main.c34e2b0e.chunk.css",
+    "static/js/main.ec91ce08.chunk.js"
   ]
 }
