@@ -9,6 +9,7 @@ import Publications from './Publications'
 import Minecraft from './Minecraft'
 
 export default class Main extends Component {
+
   render() {
     return (      
       <div>
@@ -18,7 +19,7 @@ export default class Main extends Component {
           <Work></Work>
           <Education></Education>
           <Projects></Projects>
-          <Publications></Publications>
+          {/* <Publications></Publications> */}
           <Minecraft></Minecraft>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default class Home extends Component {
               </h3>
 
               <div id="resume-button" className="btn btn-primary btn-learn">
-                <a href={resume} target='_blank' className="download-description">Download CV</a>
+                <a className="download-description" href={resume} target='_blank' rel="noopener noreferrer">Download CV</a>
                 <i className="fas fa-cloud-download-alt download-icon"></i>
               </div>          
             </div>

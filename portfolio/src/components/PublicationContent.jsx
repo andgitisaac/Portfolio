@@ -28,7 +28,7 @@ export default class PublicationContent extends Component {
     if (!this.props.link) return null;
     return (
       <div id="link-button" className="btn btn-primary btn-learn">
-        <a href={this.props.link} target="_blank">View</a>
+        <a href={this.props.link} target="_blank" rel="noopener noreferrer">View</a>
       </div>      
     )
   }
@@ -36,7 +36,7 @@ export default class PublicationContent extends Component {
   displayMedia() {
     if (!this.props.media_name) return null;
     return (
-      <img className="media-image" src={this.images[this.props.media_name].uri}></img>
+      <img className="media-image" src={this.images[this.props.media_name].uri} alt="Media Image"></img>
     );
   }
 

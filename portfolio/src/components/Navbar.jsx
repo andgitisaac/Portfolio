@@ -1,8 +1,19 @@
 import React, { Component } from 'react'
 import author_img from '../assets/images/author_img.jpg'
 
-
 export default class Navbar extends Component {
+  
+  constructor(props) {
+    super(props);    
+  }
+
+  scrollToSectionOnClick(focus) {
+    document.getElementById(focus).scrollIntoView({ 
+      behavior: "smooth", 
+      block: "start"
+    })
+  }
+
   render() {
     return (
       <div>
@@ -15,20 +26,20 @@ export default class Navbar extends Component {
 
           <nav id="navbar-container">
             <div id="navbar-content">
-              <a href="#" className="navbar-section active">Home</a> 
-              <a href="#" className="navbar-section">Skills</a>
-              <a href="#" className="navbar-section">Work Experience</a>
-              <a href="#" className="navbar-section">Education</a>
-              <a href="#" className="navbar-section">Projects</a>
-              <a href="#" className="navbar-section">Publications</a>
-              <a href="#" className="navbar-section">Minecraft</a>
+              <a className="navbar-section" onClick={() => this.scrollToSectionOnClick("home-section")}>Home</a> 
+              <a className="navbar-section" onClick={() => this.scrollToSectionOnClick("skills-section")}>Skills</a>
+              <a className="navbar-section" onClick={() => this.scrollToSectionOnClick("work-section")}>Work Experience</a>
+              <a className="navbar-section" onClick={() => this.scrollToSectionOnClick("education-section")}>Education</a>
+              <a className="navbar-section" onClick={() => this.scrollToSectionOnClick("projects-section")}>Publications/Projects</a>
+              {/* <a className="navbar-section" onClick={() => this.scrollToSectionOnClick("publications-section")}>Publications</a> */}
+              <a className="navbar-section" onClick={() => this.scrollToSectionOnClick("minecraft-section")}>Minecraft</a>
             </div>
           </nav>
                     
           <div id="contact-container">
             <div id="contact-content">
-              <a href="https://www.linkedin.com/in/hjpeng/" target="_blank" className="contact-section fab fa-linkedin"></a>
-              <a href="https://github.com/andgitisaac" target="_blank" className="contact-section fab fa-github-square"></a>
+              <a href="https://www.linkedin.com/in/hjpeng/" target="_blank" className="contact-section fab fa-linkedin" rel="noopener noreferrer"></a>
+              <a href="https://github.com/andgitisaac" target="_blank" className="contact-section fab fa-github-square" rel="noopener noreferrer"></a>
             </div>
           </div>
         </aside>

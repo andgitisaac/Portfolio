@@ -34,18 +34,18 @@ export default class ProjectContent extends Component {
     if (!this.props.link) return null;
     return (
       <div id="link-button" className="btn btn-primary btn-learn">
-        <a href={this.props.link} target="_blank">Source Code</a>
+        <a href={this.props.link} target="_blank" rel="noopener noreferrer">Source Code</a>
       </div>      
     )
   }
 
   displayMedia() {
     if (!this.props.media_type) return null;
-    else if (this.props.media_type == "image") {
+    else if (this.props.media_type === "image") {
       return (
-        <img className="media-image" src={this.images[this.props.media_name].uri}></img>
+        <img className="media-image" src={this.images[this.props.media_name].uri} alt="Media Image"></img>
       );
-    } else if (this.props.media_type == "video") {
+    } else if (this.props.media_type === "video") {
       return null;
     } 
     return null;

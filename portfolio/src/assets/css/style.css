@@ -73,20 +73,15 @@ h1, h2, h3, h4, h5, h6 {
       #aside-container #navbar-container #navbar-content .navbar-section {
         width: 150px;
         height: 30px;
-        margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         display: block;
+        cursor: pointer;
       }
 
       #aside-container #navbar-container #navbar-content a {
         color: rgba(0, 0, 0, 0.7);
         text-decoration: none;
         font-family: "Quicksand", Arial, sans-serif;
-      }
-
-      #aside-container #navbar-container #navbar-content a:after {
-        background-color: red;
       }
 
       #aside-container #navbar-container #navbar-content a:hover {
@@ -125,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-container {
+  min-height: 100vh;
   margin-bottom: 40px;
   padding-bottom: 40px;
   /* border-style: inset; */
@@ -563,12 +559,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- Publications Content -------------------- */
 
-#publications-container #publications-content {  
+#projects-container #publications-content {  
   width: 100%;
 }
 
 /* https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-  #publications-container #publications-content .overlay {
+  #projects-container #publications-content .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
     width: 0;
@@ -582,7 +578,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
 
-    #publications-container #publications-content .overlay a {
+    #projects-container #publications-content .overlay a {
       padding: 8px;
       text-decoration: none;
       font-size: 36px;
@@ -592,12 +588,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /* When you mouse over the navigation links, change their color */
-    #publications-container #publications-content .overlay a:hover, .overlay a:focus {
+    #projects-container #publications-content .overlay a:hover, .overlay a:focus {
       color: #f1f1f1;
     }
 
     /* Position the close button (top right corner) */
-    #publications-container #publications-content .overlay .closebtn {
+    #projects-container #publications-content .overlay .closebtn {
       position: absolute;
       top: 20px;
       right: 45px;
@@ -605,7 +601,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /* Position the content inside the overlay */
-    #publications-container #publications-content .overlay .overlay-content {
+    #projects-container #publications-content .overlay .overlay-content {
       position: relative;
       top: 10%; /* 25% from the top */
       width: 100%; /* 100% width */
@@ -613,14 +609,14 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
     }
 
-      #publications-container #publications-content .overlay .overlay-content .overlay-title {
+      #projects-container #publications-content .overlay .overlay-content .overlay-title {
         margin-left: 50px;
         font-size: 36px;
         color: white;
         display: block; /* Display block instead of inline */
       }
 
-      #publications-container #publications-content .overlay .overlay-content .overlay-abstract {
+      #projects-container #publications-content .overlay .overlay-content .overlay-abstract {
         margin: 0 20px;
         padding: 10px 40px;
         /* padding: 3px 0; */
@@ -628,16 +624,16 @@ h1, h2, h3, h4, h5, h6 {
         color: #818181;
       }   
 
-      #publications-container #publications-content .overlay .overlay-content .overlay-abstract:hover {
+      #projects-container #publications-content .overlay .overlay-content .overlay-abstract:hover {
         color: rgb(199, 199, 199);
         transition: 0.3s; /* Transition effects on hover (color) */
       }
 
-      #publications-container #publications-content .overlay .overlay-content .overlay-link-container {
+      #projects-container #publications-content .overlay .overlay-content .overlay-link-container {
         width: 100%;
       }
 
-      #publications-container #publications-content .overlay .overlay-content .overlay-link-container #link-button {
+      #projects-container #publications-content .overlay .overlay-content .overlay-link-container #link-button {
           height: auto;
           width: 180px;
           margin: auto;
@@ -648,42 +644,42 @@ h1, h2, h3, h4, h5, h6 {
           border-radius: 5px;
         }
 
-        #publications-container #publications-content .overlay .overlay-content .overlay-link-container a {
+        #projects-container #publications-content .overlay .overlay-content .overlay-link-container a {
           font-size: 15pt;
           color: black;
           text-align: center;
         }
 
-      #publications-container #publications-content .overlay .overlay-content .overlay-media-container {
+      #projects-container #publications-content .overlay .overlay-content .overlay-media-container {
         margin: 20px auto;
         display: flex;
         justify-content: center;
       }
       
-        #publications-container #publications-content .overlay .overlay-content .overlay-media-container .media-image {
+        #projects-container #publications-content .overlay .overlay-content .overlay-media-container .media-image {
           width: 80vw;
         }
     
-  #publications-container #publications-content .display .publication-heading {
+  #projects-container #publications-content .display .publication-heading {
     margin: 20px 60px;
     padding: 10px 0;
     border: 3px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
   }
 
-    #publications-container #publications-content .display .publication-heading .publication-title {
+    #projects-container #publications-content .display .publication-heading .publication-title {
       padding-left: 30px;
       margin-top: 0;
       margin-bottom: 0;
       text-align: left;
     }
 
-      #publications-container #publications-content .display .publication-heading .publication-title .open-icon {
+      #projects-container #publications-content .display .publication-heading .publication-title .open-icon {
         font-size: 22pt;
         cursor: all-scroll;
       } 
 
-      #publications-container #publications-content .display .publication-heading .publication-title .publication-heading-text {
+      #projects-container #publications-content .display .publication-heading .publication-title .publication-heading-text {
         margin-left: 16px;
         color: black;
         font-weight: 600;
