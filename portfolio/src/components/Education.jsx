@@ -17,8 +17,10 @@ export default class Education extends Component {
             <EducationContent 
               school="University of Washington"
               degree="Master of Science"
-              department="Electrical &amp; Computer Engineering (GPA: 3.94)"
-              descriptions={[]}
+              department="Electrical &amp; Computer Engineering (GPA: 3.94/4.0)"
+              descriptions={[
+                "Courses: Computer Programming, AI for Engineers, Machine Learning for Big Data"
+              ]}
               period="Sep. 2019 - Jun 2021"
               location="Seattle, WA"
             />
@@ -26,10 +28,9 @@ export default class Education extends Component {
             <EducationContent 
               school="National Taiwan University"
               degree="Bachelor of Science"
-              department="Electrical Engineering (GPA: 3.86)"
+              department="Electrical Engineering (GPA: 3.86/4.0)"
               descriptions={[
-                "Undergrad Research Assistant @ Vision & Learning Lab",
-                "Teaching Assistant @ Deep Learning for Computer Vision"
+                "Courses: Algorithms, Data Structure and Programming, Scientific Computing"
               ]}
               period="Sep. 2014 - Jan. 2019"
               location="Taipei, Taiwan"

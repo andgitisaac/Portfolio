@@ -21,17 +21,17 @@ export default class Work extends Component {
                   {
                     name: "Chromebook Test Automation Framework",
                     values: [
-                      {name: "Built a RESTful Flask application for test automation of Chromebook audio (SOF) and graphics (GFX) drivers."},
-                      {name: "Handled multi-threaded test suites in the background and updated their status periodically."},
-                      {name: "Reduced test cycle time by over 80% by integrating distinct test suites and redirecting results to web UI in real time."}
+                      {name: "Established a test automation web framework for Chromebook audio (SOF), graphics (GFX) and camera drivers."},
+                      {name: "Implemented a thread-safe manager to control the task database access and handle the test suites commands in the queue."},
+                      {name: "Engineered a thread suspension to allow 70% of CPU to enter C10 state (deep sleep) by halting idle threads to reduce power consumption."},
+                      {name: "Reduced test cycle time by 80% by integrating distinct test suites and redirecting results to web UI in real-time."}
                     ]
                   },
                   {
                     name: "Sound Open Firmware Integration Manger",
                     values: [
-                      {name: "Designed a Linux command line simulator for advanced users to configure the deployment of firmware and topology."},
-                      {name: "Sanitized raw user inputs of subprocesses to pass the security scan of Bandit and Checkmarx."},
-                      {name: "Refactored the automation process of building SOF for distinct Intel CPU microarchitectures."}
+                      {name: "Created a Linux command line simulator for advanced users to configure the deployment of firmware and topology."},
+                      {name: "Refactored and modularized the automation process of SOF deployment for distinct Intel CPU microarchitectures."}
                     ]
                   }
                 ]}
@@ -40,12 +40,12 @@ export default class Work extends Component {
               />
 
               <WorkContent 
-                company="BravoAI Co., Ltd."
-                job="Backend Software Engineer Intern"
+                company="BravoAI Co., Ltd. (FinTech Startup)"
+                job="Software Engineer"
                 descriptions={[
-                  {name: "Utilized MongoDB database to build RESTful web services to manage policies. Cooperated with one of the biggest insurance companies in Taiwan."},
-                  {name: "Slashed 15% cost and time by dealing with over 1,000 insurance subscriptions and claims electronically every day."},
-                  {name: "Proposed collecting customers’ e-signatures for few-shot verification of identification to prevent identity theft."}
+                  {name: "Utilized Flask and MongoDB to build a RESTful web service of insurance policies management."},
+                  {name: "Designed a user role hierarchy to determine the levels of access that users have to customer information."},
+                  {name: "Deducted 20% of paperwork time by instantly notifying the agents through app and emails for new enrollments and reimbursements."}
                 ]}
                 period="Oct. 2018--Jan. 2019"
                 location="Taipei, Taiwan"
@@ -53,7 +53,7 @@ export default class Work extends Component {
 
               <WorkContent 
                 company="National Taiwan University - Vision &amp; Learning Lab"
-                job="Undergraduate Research Assistant"
+                job="Research Assistant"
                 descriptions={[
                   {name: "Published paper as the first author: \"Element-Embedded Style Transfer Networks for Style Harmonization\" in BMVC 2019."},
                   {name: "Introduced a pair of global/local discriminator to eliminate the inharmonicity between element and image with style of interest."},

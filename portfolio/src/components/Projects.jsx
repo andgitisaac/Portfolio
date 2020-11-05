@@ -13,21 +13,6 @@ export default class Projects extends Component {
             <h2 className="subheading">My Work</h2>
             <h2 className="heading">Publications &amp; Projects</h2>
           </div>
-
-          <div id="publications-content">
-            <div>
-              <h3>Publications</h3>
-            </div>
-            <PublicationContent
-              index="0"
-              title="Element-Embedded Style Transfer Networks for Style Harmonization"
-              abstract={
-                "Neural image style transfer has been receiving increasing attention on the creation of artistic images. Given a reference image with style of interest, image style harmonization aims to blend an element from one image into this reference, achieving harmonization for the stylized output. We present an Element-Embedded Style Transfer Network (E2STN) for addressing this task. Our proposed network uniquely integrates style transfer and image matting modules. Together with global and local discriminators, both context and style information can be properly preserved in the embedded output. In the experiments, we show that our proposed network performs favorably against existing style transfer models and is able to produce results with satisfactory quality."
-              }
-              link="https://bmvc2019.org/wp-content/uploads/papers/0425-paper.pdf"
-              media_name="E2STN"
-            />
-          </div>
           
           <div id="projects-content">
             <div>
@@ -51,6 +36,19 @@ export default class Projects extends Component {
 
             <ProjectContent
               index="1"
+              title="Citation Network Analysis: Prediction and Recommendation"
+              descriptions={[
+                "Course: UW CSE 547 - Machine Learning for Big Data",
+                "Introduced the graph convolutional network (GCN) that jointly leveraged the information of network structure and the content of the documents.",
+                "Developed a data pipeline to extract and preprocess the CoRA and DBLP citations from the MariaDB with a JSON stream parser."
+              ]}
+              link="https://github.com/andgitisaac/CitNet"
+              media_type=""
+              media_name=""
+            />
+
+            <ProjectContent
+              index="2"
               title="Anime Character Generative Adversarial Network"
               descriptions={[
                 "Course: UW CSE 599G1 - Introduction to Deep Learning",
@@ -60,19 +58,6 @@ export default class Projects extends Component {
               link="https://github.com/andgitisaac/CSE599G1"
               media_type="image"
               media_name="anime_gan"
-            />
-
-            <ProjectContent
-              index="2"
-              title="Citation Network Analysis: Prediction and Recommendation"
-              descriptions={[
-                "Course: UW CSE 547 - Machine Learning for Big Data",
-                "Re-implemented several popular citaition netwrok classifiers using either paper content or the citation relationships.",
-                "Built a graph convolutional network (GCN) that jointly leveraged the information of network structure and the content of the documents."
-              ]}
-              link="https://github.com/andgitisaac/CitNet"
-              media_type=""
-              media_name=""
             />
 
             <ProjectContent
@@ -88,6 +73,21 @@ export default class Projects extends Component {
               media_name="stroke_stylization"
             />
 
+          </div>
+
+          <div id="publications-content">
+            <div>
+              <h3>Publications</h3>
+            </div>
+            <PublicationContent
+              index="0"
+              title="Element-Embedded Style Transfer Networks for Style Harmonization"
+              abstract={
+                "Neural image style transfer has been receiving increasing attention on the creation of artistic images. Given a reference image with style of interest, image style harmonization aims to blend an element from one image into this reference, achieving harmonization for the stylized output. We present an Element-Embedded Style Transfer Network (E2STN) for addressing this task. Our proposed network uniquely integrates style transfer and image matting modules. Together with global and local discriminators, both context and style information can be properly preserved in the embedded output. In the experiments, we show that our proposed network performs favorably against existing style transfer models and is able to produce results with satisfactory quality."
+              }
+              link="https://bmvc2019.org/wp-content/uploads/papers/0425-paper.pdf"
+              media_name="E2STN"
+            />
           </div>
         </div>
       </section>

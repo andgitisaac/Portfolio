@@ -21,14 +21,14 @@ export default class Skills extends Component {
 
             <SkillContent 
               index="1"
-              category="Web Development"
-              items="Flask, Django, React, HTML5, CSS"
+              category="Platforms/Tools"
+              items="Amazon Web Services (AWS), Linux, Git, GitLab"
             />
 
             <SkillContent 
               index="2"
-              category="Programming Tools"
-              items="Git, Bash, MATLAB"
+              category="Web Development"
+              items="Flask, Django, React, HTML5, CSS"
             />
 
             <SkillContent 
